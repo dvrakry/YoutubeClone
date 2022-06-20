@@ -43,11 +43,11 @@ function VideoUploadPage() {
 
         <br />
         <br />
-        <label>Title</label>
+        <label>Title.</label>
         <Input onChange value />
         <br />
         <br />
-        <label>Description</label>
+        <label>Description.</label>
         <TextArea onChange value />
         <br />
         <br />
