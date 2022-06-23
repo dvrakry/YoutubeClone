@@ -36,7 +36,7 @@ function VideoUploadPage(props) {
   };
 
   const handleChangeDecsription = (event) => {
-    console.log(event.currentTarget.value);
+    //console.log(event.currentTarget.value);
 
     setDescription(event.currentTarget.value);
   };
@@ -80,6 +80,7 @@ function VideoUploadPage(props) {
 
     axios.post("/api/video/uploadVideo", variables).then((response) => {
       if (response.data.success) {
+        console.log("성공숙숙", response.data);
         alert("video Uploaded Successfully");
         props.history.push("/");
       } else {
